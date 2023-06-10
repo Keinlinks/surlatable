@@ -1,0 +1,45 @@
+<header>
+  <section class="header_top">
+    <div class="laterals group_1">
+      <div class="icon_burger" #burger_menu>
+        <input type="button" id="check_menu" (click)="showMenu()" />
+        <label for="check_menu" class="show_menu"
+          ><img src="../../../../assets/icons/bars-solid.svg"
+        /></label>
+      </div>
+      <div class="icon_menu">
+        <img
+          class="j_desktop"
+          src="../../../../assets/icons/location-dot-solid.svg"
+        />
+
+        <p class="j_desktop button">Stores</p>
+        <img class="button" src="../../../../assets/icons/user-regular.svg" />
+        <p class="j_desktop nowrap button">Sign In</p>
+      </div>
+    </div>
+    <div class="logo">
+      <img
+        class="logo_svg button"
+        src="https://www.surlatable.com/on/demandware.static/Sites-SLT-Site/-/default/dw65efd370/images/SLT_Logo.png"
+      />
+    </div>
+    <div class="laterals group_2">
+      <div class="icon_menu button">
+        <img src="../../../../assets/icons/heart-solid.svg" />
+        <p class="j_desktop nowrap">Wish list</p>
+      </div>
+      <button class="icon_menu button">
+        <img src="../../../../assets/icons/basket-shopping-solid.svg" />
+      </button>
+    </div>
+  </section>
+  <section class="header_bottom">
+    <nav class="nav_bar j_desktop">
+      <a href="#">Product</a><a href="#">Gift</a><a href="#">Cooking Classes</a
+      ><a href="#">Brands</a><a href="#">Sale</a><a href="">New</a
+      ><a href="#">Learn</a>
+    </nav>
+    <input type="text" [placeholder]="placeholderText" id="search" />
+  </section>
+</header>
