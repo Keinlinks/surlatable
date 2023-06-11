@@ -1,1 +1,13 @@
-<p>home works!</p>
+<div
+  class="contenedor"
+  [ngStyle]="toggle_menu ? { opacity: '0.5' } : { opacity: '1' }"
+>
+  <app-event-pop></app-event-pop>
+  <app-header class="header"></app-header>
+</div>
+<ng-container>
+  <app-slider-menu
+    class="slider"
+    [ngStyle]="toggle_menu ? { left: '0' } : { left: '-100%' }"
+  ></app-slider-menu>
+</ng-container>
