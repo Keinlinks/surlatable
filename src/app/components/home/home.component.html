@@ -2,8 +2,10 @@
   class="contenedor"
   [ngStyle]="toggle_menu ? { opacity: '0.5' } : { opacity: '1' }"
 >
-  <app-event-pop></app-event-pop>
+  <app-event-pop [info]="pop_info"></app-event-pop>
   <app-header class="header"></app-header>
+  <app-event-pop [info]="pop_info_2"></app-event-pop>
+  <app-picture class="picture"></app-picture>
 </div>
 <ng-container>
   <app-slider-menu
