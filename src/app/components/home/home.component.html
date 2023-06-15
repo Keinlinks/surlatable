@@ -5,7 +5,18 @@
   <app-event-pop [info]="pop_info"></app-event-pop>
   <app-header class="header"></app-header>
   <app-event-pop [info]="pop_info_2"></app-event-pop>
-  <app-picture class="picture"></app-picture>
+  <app-picture
+    class="picture"
+    [desktop]="desktop_banner"
+    [mobile]="mobile_banner"
+  ></app-picture>
+  <br />
+  <br />
+  <app-picture
+    class="picture"
+    [desktop]="desktop_picture"
+    [mobile]="mobile_picture"
+  ></app-picture>
 </div>
 <ng-container>
   <app-slider-menu
