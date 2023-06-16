@@ -1,1 +1,17 @@
-<app-home></app-home>
+<div
+  class="contenedor"
+  [ngStyle]="toggle_menu ? { opacity: '0.5' } : { opacity: '1' }"
+>
+  <app-event-pop [info]="pop_info"></app-event-pop>
+  <app-header class="header"></app-header>
+  <app-event-pop [info]="pop_info_2"></app-event-pop>
+  <router-outlet></router-outlet>
+  <app-footer class="footer"></app-footer>
+</div>
+
+<ng-container>
+  <app-slider-menu
+    class="slider"
+    [ngStyle]="toggle_menu ? { left: '0' } : { left: '-100%' }"
+  ></app-slider-menu>
+</ng-container>

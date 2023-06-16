@@ -18,38 +18,9 @@ export class HomeComponent implements OnInit {
     'https://www.surlatable.com/on/demandware.static/-/Sites/default/dw1368e024/images/homepage_2023/1680x600_banner/230601_Scanpan-Upto55off_HP_WideBanner_Desk_1680x600.jpg';
   mobile_picture: string =
     'https://www.surlatable.com/on/demandware.static/-/Sites/default/dwdc53eab4/images/homepage_2023/768_mobile_banners/230601_Scanpan-Upto55off_HP_Mobile_768x950.jpg';
-  private subscribe_1!: Subscription;
-  private subscribe_2!: Subscription;
-  pop_info: string[] = [];
-  pop_info_2: string[] = [];
-  constructor(
-    private servicioHeader: HeaderServiceService,
-    private pop: PopInfoService
-  ) {
-    this.subscribe_1 = this.servicioHeader.togglehide$.subscribe(() => {
-      this.hideSlider();
-    });
-    this.subscribe_2 = this.servicioHeader.toggleShow$.subscribe(() => {
-      this.showSlider();
-    });
-    this.pop_info = pop.getPop();
-    this.pop_info_2 = pop.getPop_2();
-  }
+
+  constructor() {}
   ngOnInit(): void {}
-  toggle_menu: boolean = false;
+
   title = 'surlatable';
-
-  showSlider() {
-    this.toggle_menu = true;
-  }
-  hideSlider() {
-    this.toggle_menu = false;
-  }
-
-  @HostListener('window:resize', ['$event'])
-  onWindowResize(event: any) {
-    if (window.innerWidth > 1024) {
-      this.toggle_menu = false;
-    }
-  }
 }

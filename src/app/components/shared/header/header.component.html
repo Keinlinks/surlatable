@@ -19,10 +19,11 @@
       </div>
     </div>
     <div class="logo">
-      <img
-        class="logo_svg button"
-        src="https://www.surlatable.com/on/demandware.static/Sites-SLT-Site/-/default/dw65efd370/images/SLT_Logo.png"
-      />
+      <a routerLink="/">
+        <img
+          class="logo_svg button"
+          src="https://www.surlatable.com/on/demandware.static/Sites-SLT-Site/-/default/dw65efd370/images/SLT_Logo.png"
+      /></a>
     </div>
     <div class="laterals group_2">
       <div class="icon_menu button">
@@ -36,9 +37,9 @@
   </section>
   <section class="header_bottom">
     <nav class="nav_bar j_desktop">
-      <a href="#">Product</a><a href="#">Gift</a><a href="#">Cooking Classes</a
-      ><a href="#">Brands</a><a href="#">Sale</a><a href="">New</a
-      ><a href="#">Learn</a>
+      <a routerLink="/products">Products</a><a href="#">Gift</a
+      ><a href="#">Cooking Classes</a><a href="#">Brands</a><a href="#">Sale</a
+      ><a href="">New</a><a href="#">Learn</a>
     </nav>
     <input type="text" [placeholder]="placeholderText" id="search" />
   </section>
