@@ -2,9 +2,16 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.9.
 
-## Development server
+Para abrir el proyecto:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Paso 1: Instalar dependencias
+
+npm install
+
+paso 2: correr el dev server
+
+ng serve
+
 
 ![porf1](https://github.com/Keinlinks/surlatable/assets/121351527/7a3c9956-eb01-4827-ba17-57ff02a811db)
 
